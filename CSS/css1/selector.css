@@ -1,0 +1,41 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type selector */
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Class selector */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ID selector */
+#header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Pseudo-class selector */
+a:hover {
+    color: red;
+}
+
+/* Pseudo-element selector */
+p::first-line {
+    font-weight: bold;
+}
