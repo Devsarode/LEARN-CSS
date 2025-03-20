@@ -1,0 +1,18 @@
+/* cascading property */
+/* the last elements property will be applied if there are 2-3 same elements  */
+.post:nth-of-type(2n) {
+    background-color: rgb(247, 156, 0);
+}
+/* selector specificity  */
+/* id > class,attribute,pseudo-class > element,pesudo-element */
+/* more selector is good  */
+/* if same specificity then check cascading property */
+
+/* inline style > id > class > element */
+/* inline style means changing style in html so it will be permanent as it will have highest value */
+
+
+/* !important --> to show the most specific thing or imp thing in doc  */
+h2{
+    color: rgb(98, 147, 185) !important;
+}
