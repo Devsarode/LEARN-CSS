@@ -1,0 +1,41 @@
+/* display sets whether an element i treated as a block or inline element and the layout used for its children */
+/* display: block; */
+/* display: inline; */
+
+
+/* h1 is an block element */
+h1{
+    /* h1 became inline  element  */
+    display: inline; 
+    background-color: aqua;
+}
+/* span is an inline element */
+span{
+    /* span became block element */
+    display: block;
+    /* background-color: blueviolet; */
+}
+#test{
+    /* background-color: rgb(245, 230, 241); */
+    border: 10px solid black;
+    height: 100px;
+    width: 200px;
+    padding : 50px;
+    margin: 50px;
+    display: inline;
+}
+/* Do not start on a new line */
+/* Only use as much horizontal space as required by the content.Do not accept width and height CSS properties */
+/* Margins will work horizontally, but not vertically */
+/*Padding works on all sides,but the top and bottom may overlap other elements  */
+
+
+
+h2{
+    border: 10px solid black;
+    background-color:  rgb(237, 193, 193);
+}
+/* Always start on a newline */
+/* Take up as much horizontal space as possible (the full width of the container or browser window if there is no container) */
+/* Will respect width and height CSS properties */
+/* Horizontal and vertical margins both work */
