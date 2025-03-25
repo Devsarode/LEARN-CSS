@@ -1,0 +1,11 @@
+/* it adds shadow effects around an element's frame */
+/* it is a shorthand property for setting the shadow color, size, blur and offset */
+
+
+div{
+    width: 300px;   
+    height: 300px;
+    background-color: pink;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}

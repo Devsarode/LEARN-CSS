@@ -1,0 +1,23 @@
+/* transition enable you to definr the transition between two states of an element */
+
+div{
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    transition: width 1s;
+    transition: 1s;
+    /*  can also be done like this transition: width 1s, height 2s, background-color 4s; */
+margin: 0 auto;
+/* for bring the box in middle */
+
+transition: margin-top 2s ease-in-out 0.2s;
+/* property name|duration|timing-function| delay */
+
+}
+div:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: blueviolet;
+ margin-top:400px ;
+}

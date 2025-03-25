@@ -1,0 +1,15 @@
+/* opacity  */
+/* sets the opacity for the element  */
+/* range from 0 to 1 */
+/* 0 is fully transparent */
+/* 1 is fully opaque */
+div{
+    height : 100px;
+    width : 100px;
+    opacity: 0.5;
+background-color: rgb(229, 255, 0);
+}
+button{
+ 
+    background-color: rgba(255, 0, 0, 0.5);
+}   

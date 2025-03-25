@@ -1,0 +1,19 @@
+/* alpha channel sets the opacity for a color  */
+/* range from 0 to 1 */
+/* rgba (255,255,255,0.3) */
+/* 0.3 is the alpha channel */
+/* 0 is fully transparent */
+/* 1 is fully opaque */
+/* 0.5 is 50% transparent */
+
+div{
+    height : 100px;
+    width : 100px;
+    background-color: rgba(255,0,0,0.5);
+     /* 50% transparent */
+
+    background-color: #4dff00a1;
+/* here a1 is the alpha channel  */
+/* range in hex code is from 00 to ff */
+   
+}

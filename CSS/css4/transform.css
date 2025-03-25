@@ -1,0 +1,57 @@
+/* transform  */
+/* this property lets you to rotate , scale, skew ore translate an element */
+
+section{
+    margin-top:100px;
+}
+
+div{
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+transition: 2s;
+margin: 0 auto;
+}
+
+div:nth-of-type(2n):hover{
+    background-color: blue;
+}
+
+div:nth-of-type(3n){
+    background-color: aqua;
+}
+
+/* transform */
+#one:hover{
+    height: 200px;
+    width: 200px;
+    transform: rotate(45deg);
+    /* clockwise */
+}
+#two:hover{
+   
+    transform: scale(1.5);
+    /* 1.5 times bigger */
+    transform: scale(0.5 , 1.5);
+    /* 0.5 times smaller in x axis and 1.5 times bigger in y axis */
+    transform: scale(0.5 , 1.5) rotate(45deg);
+    /* 0.5 times smaller in x axis and 1.5 times bigger in y axis and rotate 45 degree */
+    transform: scaleX(2);
+    /* 2 times bigger in x axis */
+}
+#three:hover{
+    transform: translate(100px, 100px);
+    /* 100px right and 100px down */
+    transform: translateX(50px);
+    /* 05px right */
+    transform: translateY(-50px);
+    /* 50px up */
+}
+#four:hover{
+    transform: skew(30deg);
+    /* 30 degree */
+}
+#five:hover{
+    transform: rotate(30deg) skew(30deg) translateY(150px);
+    /* rotate 30 degree , skew 30 degree , 150px down */
+}

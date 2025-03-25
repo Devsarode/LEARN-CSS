@@ -1,0 +1,41 @@
+/* sets an image as a background */
+
+#one{
+    width:600px;
+    height:300px;   
+    background-image: url('Image.jpg');
+  
+    background-size: cover;
+    /*  best one for background image  */
+    /*
+    cover-> onlu crop to fit the image no scale 
+     */
+    background-position: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#two{
+    width:400px;
+    height:400px;   
+    background-image: url('Image.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    /* contain ->  no crop or scale but  to fill the area it will repeat the image */
+    background-position: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#three{
+    width:400px;
+    height:500px;   
+    background-image: url('Image.jpg');
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+    /* auto -> it will stretch the image */
+    background-position: center;
+    border: 1px solid black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
