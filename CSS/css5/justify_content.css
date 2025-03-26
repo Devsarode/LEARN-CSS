@@ -1,0 +1,34 @@
+/* tells how the browser distributes space between and around content items along the main axis  */
+/* justify-content */
+/* it is a property of the flex container */
+/* it helps to align the flex items */
+
+
+#container{
+   
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 5px solid black;
+    display: flex; /* it will make the divs in the container as flex items */
+   flex-direction: row;
+   /* justify-content: flex-start; default value */
+   /* justify-content: flex-end;  items are placed at the end of the main axis */
+    /* justify-content: center; items are placed at the center of the main axis */
+    /* justify-content: space-between; items are placed with space between the lines */
+    /* justify-content: space-around; items are placed with space around the lines */
+    justify-content: space-evenly;/* items are placed with space around the lines */
+} 
+h1{
+    text-align: center;
+}
+
+#container div{
+    width: 100px;
+    height: 50px;
+    color: white;
+    
+    font-size: 1.5em;
+    text-align: center;
+}

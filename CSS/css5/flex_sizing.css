@@ -1,0 +1,65 @@
+/* flex-basis -> it sets the initial main size of a flex item*/
+/* flex-grow -> it sets the ability of a flex item to grow if necessary */
+              /* it specifies how much of the flex container's remaining space should be assigned to the flex items's main size */
+/* flex-shrink -> it sets the ability of a flex item to shrink if necessary */
+
+
+#container{
+   
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 5px solid black;
+    display: flex; /* it will make the divs in the container as flex items */
+    flex-direction: row; /* default value  , main axis left to right */ 
+   justify-content: flex-start;
+   /* flex-wrap:wrap; */
+   align-items: flex-start; /* default value , stats from top*/
+    
+   
+}
+
+#org{
+    align-self: flex-end;
+   flex-basis: 50px; 
+   /* it will atleast take the size which is required by it other property like font size */
+    /* it depends on the flex direction if it is row it will affect the width and if it is column then it will affect the height */
+flex-shrink:1.5 ;
+}  
+#blue{
+    flex-grow:1 ;
+    /* takes the available space  */
+    /* it will share the space with other if other has this property equally if the vlaue is 1 */
+    /* if the value is 2 then it will take double space than the other */
+    /* if the value is 0 then it will not take any space */
+    /* if the value is 0.5 then it will take half of the space */
+
+    max-width: 400px;
+    min-width: 100px;
+    /* it will not take the space more than 400px and less than 100px */
+} 
+
+#red{
+flex-shrink: 3;
+/* it will shrink the size of the div if the space is not available */
+/* if the value is 1 then it will shrink the size */
+/* if the value is 0 then it will not shrink the size */
+/* if the value is 0.5 then it will shrink the size to half */
+/* if the value is 2 then it will shrink the size to double */
+
+}
+
+    
+h1{
+    text-align: center;
+}
+
+#container div{
+    width: 300px;
+    height: 100px;
+    color: white;
+    
+    /* font-size: 1.5em; */
+    text-align: center;
+}

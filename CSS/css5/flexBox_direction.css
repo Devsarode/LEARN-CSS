@@ -1,0 +1,57 @@
+/* flexible box layout */
+/* it is a one dimensional layout method for arrangeing items in rows or columms */
+/* make website responsive like by changing screen size it will change screen layout  */
+
+/* the flex model */
+/* it has two main components */
+/* flex container */
+/* like there are 3 child div in the parent div , so parent div is the flex container */
+/* flex items */
+/* the 3 child div will be the flex items wich are in the flex container */
+
+/* direction = row (x axis ) or main axis   */
+/* direction = row (y axis) or cross axis */
+
+/*  direction = COLUMN (x axis ) or cross axis */
+/* direction = column (y axis ) or main axis  */
+
+
+/* flexbox direction */
+/* it sets how flex items are placed in the flex  */
+/* container defining the main axis and the direction (normal or reversed) */
+/* and the cross axis and its direction (normal or reversed) */
+/* the default value is row */
+/* the flex-direction property can be row , row-reverse , column , column-reverse */
+/* row -> items are placed the same as the text direction */
+/* row-reverse -> items are placed opposite to the text direction */
+/* column -> items are placed top to bottom */
+/* column-reverse -> items are placed bottom to top */
+
+#container{
+   
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 5px solid black;
+    display: flex; /* it will make the divs in the container as flex items */
+    flex-direction: row; /* default value  , main axis left to right */ 
+     flex-direction : column; /* items are placed top to bottom */
+    flex-direction :  row-reverse;  /* items are placed opposite to the text direction , main axis right to left */
+    flex-direction :  column-reverse; /* items are placed bottom to top */
+}
+h1{
+    text-align: center;
+}
+
+#container div{
+    width: 100px;
+    height: 100px;
+    color: white;
+    
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+

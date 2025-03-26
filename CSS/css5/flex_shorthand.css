@@ -1,0 +1,33 @@
+/* The flex shorthand property is used to set the grow, shrink, and basis properties in one line */
+
+
+/* AA */
+/* Example 1: flex-grow: 1; flex-shrink: 0; flex-basis: auto; */
+.flex-item-1 {
+    flex: 1 0 auto; /* The item will grow to fill available space, will not shrink, and has an initial size based on its content */
+}
+
+/* Example 2: flex-grow: 2; flex-shrink: 1; flex-basis: 50px; */
+.flex-item-2 {
+    flex: 2 1 50px; /* The item will grow twice as much as others, will shrink if necessary, and has an initial size of 50px */
+}
+
+/* Example 3: flex-grow: 0; flex-shrink: 1; flex-basis: 100px; */
+.flex-item-3 {
+    flex: 0 1 100px; /* The item will not grow, will shrink if necessary, and has an initial size of 100px */
+}
+
+
+/* BB */
+/* Example 4: flex-grow: 2;  flex-basis: 100px; */
+.flex-item-4 {
+    flex: 1  100px; /* The item will grow twice as much as others, will not shrink, and has an initial size of 100px */
+}
+
+
+/* CC */
+/* flex grow (unitless) */
+/* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. */
+.flex-item-5 {
+    flex: 2; /* The item will grow twice as much as the other items */
+}

@@ -1,0 +1,31 @@
+/* sets whether flex items are forced onto one line or cam wrap onto multiple lines */
+#container{
+   
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 5px solid black;
+    display: flex; /* it will make the divs in the container as flex items */
+    flex-direction: row; /* default value  , main axis left to right */ 
+   justify-content: flex-start;
+   flex-wrap:nowrap; /* default value */
+   flex-wrap: wrap; /* items are placed in multiple lines */
+    flex-wrap: wrap-reverse; /* items are placed in multiple lines but in reverse order */
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+
+#container div{
+    width: 300px;
+    height: 100px;
+    color: white;
+    
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+

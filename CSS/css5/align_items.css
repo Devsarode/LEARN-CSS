@@ -1,0 +1,33 @@
+/* distibites our items along the cross axis */
+
+
+#container{
+   
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 5px solid black;
+    display: flex; /* it will make the divs in the container as flex items */
+    flex-direction: row; /* default value  , main axis left to right */ 
+   justify-content: flex-start;
+   flex-wrap:wrap;
+    align-items: flex-start; /* default value , stats from top*/
+     align-items: flex-end; /*items are placed at the end of the cross axis ,bottom*/
+    align-items: center; /* items are placed at the center of the cross axis */
+   align-items: baseline; /* items are placed at the baseline of the cross axis, arranged at same text height  */
+
+   
+}
+h1{
+    text-align: center;
+}
+
+#container div{
+    width: 300px;
+    height: 100px;
+    color: white;
+    
+    font-size: 1.5em;
+    text-align: center;
+}
