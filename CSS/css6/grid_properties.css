@@ -1,0 +1,60 @@
+
+
+.container {
+    height: 600px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+   display:inline-grid;
+   /* to make the container as inline */
+   grid-template-rows: repeat(4, 1fr) ; 
+    grid-template-columns: 1fr 1fr 1fr ;  /* repeat(3, 1fr) ;  */
+
+/* properties */
+justify-items: end;
+/* move the content to end in the item space */
+/* it is for horizontal (rows) */
+align-items: end ;
+/* move the content to end in the item space */
+/* it is for vertical (columns) */
+
+place-items: center end;
+/* it is for both vertical (columns) and horizontal (rows) */
+/* end for horizontal and center for vertical */
+
+
+
+}
+.item{
+     height: 100px;
+    width: 100px; 
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+.item1{
+    height: 100px;
+    width: 100px; 
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+
+    /* properties */
+    justify-self: start;
+    /* only for single item */
+    
+    align-self: center;
+    /* only for single item */
+
+    place-self: end start;
+    /* only for single item */
+    /*  vertical and horizontal*/
+
+}

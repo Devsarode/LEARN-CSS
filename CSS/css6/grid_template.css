@@ -1,0 +1,55 @@
+/* grid template */
+/* they define the lines & track sizing */
+
+
+.container {
+    height: 300px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+   display: grid;
+   grid-template-rows: 50px 50px 50px 50px; 
+   /* made 4 rows of 50px  */
+   /* as we have 5 div the 5th div will take the rest space until we asign the space */
+    grid-template-columns: 100px 100px 100px ;
+    /* made 3 columns of 100px */
+
+    /* AS WE HAVE TAKEN BOTH GRID-ROWS AND GRID-COLUMN IT WILL CREATE A GRID OF WIDTH 100PX AND HEIGHT 50PX FOR EACH CELL */
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+
+.container1 {
+    height: 300px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+   display: grid;
+    /* grid-template-rows: 50px 50px 50px 50px; */
+    grid-template-columns: auto auto auto;
+    /* AUTO -> DIVIDES THE SPACE EQUALLY TO UNDERSTAND IT EASILY , THE SPACE DEPENDS ON THE CONTENT OF ITEMS   */
+    /* SINGLE AUTO MEANS 1 COLUMN */
+    /* N NO. OF AUTO MEANS N NO. OF COLUMN */
+/*  AUTO IS NOT PREFERED  */
+}
+.itemS{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 2px solid rgb(227, 57, 57);
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    
+}

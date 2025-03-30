@@ -1,0 +1,38 @@
+/* grid template repeat */
+/* repeat is used to divide all availabe space  */
+
+
+
+.container {
+    height: 600px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+   display: grid;
+   grid-template-rows: repeat(4, 1fr) ; 
+/* 1 fr means 1 fraction of 100% width or available space  */
+    grid-template-columns: 1fr 1fr 1fr ;  /* repeat(3, 1fr) ;  */
+/* 1 fr means 1 fraction of 100% width or available space  */
+/* this makes 4 rows of equal space and 3 column of equal space */
+ 
+row-gap: 10px;
+column-gap: 10px;
+/* gap: 10px; */
+grid-gap: 30px;
+/* both rows and columns has 30px gap */
+grid-gap: 30px 20px;
+/* rows has 30px gap and columns has 20px gap */
+
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    
+}

@@ -1,0 +1,64 @@
+/* grid */
+/* Setting a container's display to grid will make all children grid items */
+/* can change the layout in 2D  */
+/*contains  grid container and grid items  */
+
+/* grid container is the parent element of the grid items */
+/* grid items are the children of the grid container */
+
+/* in practical cases fles is used more than grid as we will change the layout is 1D   */
+
+/* 1. Why Flexbox is More Common in Practical Use?
+
+One-Dimensional Layouts → Flexbox is ideal for arranging elements in a single row or column, like navigation bars, buttons, forms, or lists.
+Dynamic Content Handling → It automatically adjusts item sizes based on content, making it great for responsive design.
+Easier Alignment → justify-content, align-items, and gap make centering and spacing simpler.
+Better Browser Support → Flexbox has been widely supported for longer, making it a safer choice in older projects.
+Simpler Syntax → Often requires fewer lines of code than Grid for basic layouts.
+
+2.When to Use CSS Grid Instead?
+
+Complex layouts with both rows and columns (e.g., dashboards, multi-section web pages).
+Precise control over layout structure (e.g., fixed and fluid areas combined).
+When designing the entire page layout, not just individual components */
+
+/* grid model  */
+/* grid lines , grid cell, grid track */
+
+/*> grid lines are the horizontal and vertical lines that make up the grid */
+/* grid row gap is the space between two adjacent grid rows */
+/* grid column gap is the space between two adjacent grid columns */
+/* grid area is the space between two adjacent row and two adjacent column */
+/*  OR  grid gap is the space between two adjacent grid items */
+/* grid row is the horizontal line of the grid */
+/* grid column is the vertical line of the grid */
+
+/* > grid cell is the space between two adjacent row and two adjacent column */
+
+/* >grid track is the space between two adjacent grid lines */
+
+
+
+
+ 
+.container {
+    height: 600px;
+    width: 900px;
+    background-color: pink;
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+   display: grid;
+
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    
+}
+

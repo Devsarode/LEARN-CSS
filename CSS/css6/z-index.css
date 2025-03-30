@@ -1,0 +1,43 @@
+/* z-index */
+/* it decides the stack level of element  */
+/* overlapping element with a larger z-index cover those with a smaller one  */
+/* default value is 0 */
+
+/* if the object or the element overlap each other then z-index will help to decide which element should come above or below */
+/* the less the stack level it will go back */
+
+
+/* z-index cannot be given to position-static or default  */
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* position: relative; */
+   
+}
+
+.one{
+    background-color: royalblue;
+    position: relative;
+    z-index: 1;
+    /* only when position is given abolute or relative then only z-index will be applied */
+}
+.two{
+    background-color: red;
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+    z-index: -3 ;
+/* z-index can be negative  */
+/* it will decide whether the  element will be on the top or below  on the bases of which has bigger  negative value  */
+}
+.three{
+    background-color: green;
+    position: relative;
+    bottom: 100px;
+    z-index: -2;
+    /* -2 is greater than -3 */
+}

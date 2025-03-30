@@ -1,0 +1,53 @@
+/* css animation */
+/* to animate css element */
+
+
+
+.box{
+    height: 400px;
+    width: 600px;
+    background-color: lightseagreen;
+    border: 2px solid black;
+
+    /* animation-name: widthAnimation; */
+    /* animation-name: colorAnimation; */
+    /* animation-name: fontAnimation; */
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* normal , reverse , alternate , alternate-re */
+
+
+    /* shorthand  */
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+animation: widthAnimation 2s ease-in-out 2s infinite alternate;
+
+}
+@keyframes fontAnimation { 
+/* @keyframes ____ in the dash it can be any name  */
+    from{font-size:20px ;}
+    to{font-size: 50px;}
+}
+@keyframes colorAnimation { 
+    /* % in animation */
+    0%{background-color: lightseagreen ;}
+    25%{background-color: lightcoral ;}
+    50%{background-color: lightblue ;}
+    75%{background-color: lightgoldenrodyellow ;}
+    100%{background-color: lightseagreen ;}
+
+    /* from{background-color: magenta;}
+    to{background-color: lightseagreen;} */
+}
+@keyframes widthAnimation { 
+    from{width: 100px;
+    height: 100px;
+background-color: maroon;}
+    to{width: 600px;
+    height: 600px;
+    border-radius: 50%;
+background-color: rgb(200, 236, 20);}
+    
+}
