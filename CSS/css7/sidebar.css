@@ -1,0 +1,124 @@
+/* for all for clean slate or page  */
+*{
+    margin:0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+.main_box{
+    background: url("photo.jpg");
+    height: 100vh;
+    /* vh is viewport which is relative length unit */
+    /* it is the height of the screen */
+    background-size: cover;
+}
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: bold ;
+    position : absolute;
+    left:16px;
+    top: 7px;
+cursor: pointer;
+transition: all linear 0.2s;
+}
+.sidebar_menu{
+    position:fixed;
+    /* for not checked  */
+    left: -350px;
+height: 100vh;
+width:250px;
+background-color: rgb(255, 255, 255, 0.1);
+box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+
+transition: linear 0.5s;
+}
+
+.sidebar_menu  .logo {
+    position: absolute;
+    width:100%;
+    line-height :60px;
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+
+}
+.sidebar_menu  .logo a{
+    position: absolute;
+    left:60px;
+    color:white;
+    text-decoration: none;
+    font-size : 20px;
+    font-weight: bold;
+
+}
+.sidebar_menu  .btn_two{
+    color: white;
+    font-size: 30px;
+    font-weight: bold ;
+    position : absolute;
+    left:218px; 
+    top: 7px;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+.sidebar_menu  .menu{
+    position: absolute;
+  width: 100%;
+    top :80px;
+
+}
+.sidebar_menu  .menu li{
+    margin-top: 10px;
+    width:100%;
+    padding: 5px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.sidebar_menu  .menu i{
+    padding-right: 10px;
+}
+.sidebar_menu  .menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar_menu  .social_media{
+opacity: 0.5;
+position: absolute;
+left: 25%;
+bottom: 40px;
+}
+.sidebar_menu  .social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0px 6px;
+
+}
+
+#check{
+    display: none;
+}
+
+.sidebar_menu  .menu li:hover{
+    box-shadow: 0 0 4px rgb(255, 255, 255, 0.5);
+}
+.btn_one i:hover{
+    box-shadow: 0 0 4px rgb(255, 255, 255, 1);
+}
+.btn_two i:hover{
+    box-shadow: 0 0 4px rgb(255, 255, 255, 1);
+}
+.sidebar_menu  .social_media i:hover{
+    opacity: 100%;
+    color: white;
+    transform : scale(2);
+}
+
+/* ~ this is genera sibling selector combinator */
+#check:checked ~ .sidebar_menu{
+ left: 0;   
+}
+#check:checked ~ .btn_one i{
+opacity: 0;
+}
